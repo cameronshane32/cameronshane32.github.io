@@ -383,7 +383,16 @@ h2 {
 
 .about-img {
   max-height: 25em;
-  height: 15em; }
+  height: 15em;
+  background-image: url("../img/profile.JPG");
+  background-position: center;
+  background-size: cover; }
+  .about-img .about-img:hover {
+    background-image: url("../img/profile2.JPG");
+    background-position: center;
+    background-size: cover;
+    max-height: 25em;
+    height: 15em; }
   @media (min-width: 42em) {
     .about-img {
       float: left;
@@ -444,7 +453,8 @@ figure {
   flex: 1 1 20rem; }
   .portfolio-item img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .portfolio-item figcaption {
     position: absolute;
     top: 100%;
@@ -494,7 +504,9 @@ figure {
         .portfolio-items .portfolio-title {
           font-size: 3rem; }
         .portfolio-items .featured .portfolio-title {
-          font-size: 5rem; } }
+          font-size: 5rem; }
+        .portfolio-items .portfolio-link {
+          font-size: 1rem; } }
   .portfolio-item.featured {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2; }
@@ -515,6 +527,8 @@ figure {
   overflow-y: scroll;
   overflow-x: hidden;
   display: none; }
+  .portfolio-modal a {
+    text-decoration: none; }
   .portfolio-modal.is-open {
     display: block; }
 
@@ -539,7 +553,7 @@ figure {
   background-position: center; }
 
 .header-one {
-  background-image: url(../img/portfolio-01.jpg); }
+  background-image: url(../img/heading.png); }
 
 .header-two {
   background-image: url(../img/portfolio-02.jpg); }
@@ -634,7 +648,8 @@ form {
           form .message textarea {
             height: 10em; }
         form .button {
-          grid-area: button; } } }
+          grid-area: button;
+          cursor: pointer; } } }
 
 label {
   display: block;
