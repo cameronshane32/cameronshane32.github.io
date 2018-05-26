@@ -297,7 +297,7 @@ h2 {
   text-transform: uppercase;
   line-height: 1;
   font-family: "Six Caps", sans-serif;
-  font-weight: 400; }
+  font-weight: 300; }
   @media (min-width: 50em) {
     h2 {
       font-size: 3rem; } }
@@ -306,6 +306,7 @@ h2 {
   background-image: url(../img/header-bg.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -313,8 +314,8 @@ h2 {
   position: relative; }
   .welcome h1 {
     font-size: 1.5rem;
-    font-weight: 400;
-    color: #4d5f66;
+    font-weight: 300;
+    color: #2d2d2a;
     line-height: 2;
     text-align: center; }
     @media (min-width: 50em) {
@@ -327,21 +328,13 @@ h2 {
       text-transform: uppercase;
       line-height: 1;
       font-family: "Six Caps", sans-serif;
-      font-weight: 400;
+      font-weight: 300;
       display: block; }
+      .welcome h1 span img {
+        width: 5em; }
       @media (min-width: 50em) {
         .welcome h1 span {
           font-size: 9vw; } }
-    .welcome h1::before, .welcome h1::after {
-      content: '';
-      display: block;
-      width: 60%;
-      height: 1px;
-      background: #4d5f66; }
-    .welcome h1::before {
-      margin: 0 auto 2em; }
-    .welcome h1::after {
-      margin: 2em auto 0; }
 
 .intro {
   display: flex;
@@ -471,7 +464,7 @@ figure {
 
 .portfolio-title {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: auto; }
 
 .portfolio-desc {
@@ -480,7 +473,7 @@ figure {
 .portfolio-link {
   color: #ffffff;
   font-weight: 900;
-  font-size: .9rem;
+  font-size: .7rem;
   text-decoration: none;
   border-bottom: 3px solid #ffffff;
   align-self: flex-start; }
@@ -497,12 +490,16 @@ figure {
     grid-template-columns: repeat(2, 1fr); }
     @media (min-width: 50em) {
       .portfolio-items {
-        grid-template-columns: repeat(4, 1fr); } }
+        grid-template-columns: repeat(4, 1fr); }
+        .portfolio-items .portfolio-title {
+          font-size: 3rem; }
+        .portfolio-items .featured .portfolio-title {
+          font-size: 5rem; } }
   .portfolio-item.featured {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2; }
   .featured .portfolio-title {
-    font-size: 4rem; }
+    font-size: 3.5rem; }
   .featured .portfolio-desc {
     display: block; } }
 
@@ -669,7 +666,7 @@ textarea {
   text-transform: uppercase;
   line-height: 1;
   font-family: "Six Caps", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   padding: .5em 1.5em; }
 
 footer {
@@ -744,7 +741,7 @@ nav a {
   text-transform: uppercase;
   line-height: 1;
   font-family: "Six Caps", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   padding: calc(100vh/8) 0;
   line-height: 0;

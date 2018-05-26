@@ -47,7 +47,7 @@ figure {
 
 .portfolio-title {
   color: $white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: auto;
 }
 
@@ -58,7 +58,7 @@ figure {
 .portfolio-link {
   color: $white;
   font-weight: $fw-b;
-  font-size: .9rem;
+  font-size: .7rem;
   text-decoration: none;
   border-bottom: 3px solid $white;
   align-self: flex-start;
@@ -79,6 +79,14 @@ figure {
 
     @include mq {
       grid-template-columns: repeat(4, 1fr);
+      .portfolio-title {
+        font-size: 3rem;
+      }
+      .featured {
+        .portfolio-title {
+          font-size: 5rem;
+        }
+      }
     }
   }
 
@@ -89,7 +97,7 @@ figure {
 
   .featured {
     .portfolio-title {
-          font-size: 4rem;
+          font-size: 3.5rem;
     }
 
     .portfolio-desc {
