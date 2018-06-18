@@ -380,21 +380,11 @@ h2 {
     clear: both; }
   .about-me h1 {
     color: #2cda9d; }
-
-.about-img {
-  max-height: 25em;
-  height: 15em;
-  background-image: url("../img/profile.JPG");
-  background-position: center;
-  background-size: cover; }
-  .about-img .about-img:hover {
-    background-image: url("../img/profile2.JPG");
-    background-position: center;
-    background-size: cover;
+  .about-me .about-img {
     max-height: 25em;
     height: 15em; }
   @media (min-width: 42em) {
-    .about-img {
+    .about-me {
       float: left;
       margin-right: 1em; } }
 
